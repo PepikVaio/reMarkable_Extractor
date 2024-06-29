@@ -13,7 +13,7 @@
       "version":"Version:",
       "developer":"Developer:",
       "description":[
-        "Description:",
+        "*** Description: ***",
         "--------------------",
         "The shortcut allows you to extract individual pages of a pdf file from reMarkable and saves it as a new pdf file.",
         "You can also save the pdf file as plain text."
@@ -28,7 +28,7 @@
       "version":"Verze:",
       "developer":"Vývojář:",
       "description":[
-        "Popis:",
+        "*** Popis: ***",
         "-------------",
         "Zkratka vám umožní exktrahovat jednotlivé stránky pdf souboru z reMarkable a uloží jej jako nový pdf soubor.",
         "Pdf soubor můžete také uložit jako prostý text." 
