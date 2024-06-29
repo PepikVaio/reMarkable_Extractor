@@ -7,33 +7,33 @@
 
     "label":{
       "welocme":[
-        "Welcome to",
-        "•————————•",
+        "Welcome to shortcut!",
+        "•——————————————————•",
         ""
       ],
-      "title":"Name:",
-      "version":"Version:",
-      "developer":"Developer:",
+      "title":"Name",
+      "version":"Version",
+      "developer":"Developer",
       "description":[
-        "Description:",
+        "Description!",
         "•——————————•",
-        ""
+        "Kratky popis co dela aplikace"
       ],
     },
       
     "label_cs":{
       "welocme":[
-        "Vítejte v",
-        "•———————•",
+        "Vítejte ve zkratce!",
+        "•—————————————————•",
         ""
       ],
-      "title":"Název:",
-      "version":"Verze:",
-      "developer":"Vývojář:",
+      "title":"Název",
+      "version":"Verze",
+      "developer":"Vývojář",
       "description":[
-        "Popis:",
+        "Popis!",
         "•————•",
-        ""
+        "Kratky popis co dela aplikace"
       ],
     },
   },
