@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-size: 150%;
+}
+
+header {
+  width: 100%;
+  margin: 50px auto 10px auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 2px solid #ccc;
+  padding-left: 10px;
+}
+
+p {
+  text-indent: 20px;
+  margin-top: 10px;
+}

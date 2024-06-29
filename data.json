@@ -1,0 +1,122 @@
+{
+  "info":{
+    "title":"Send to...!",
+    "version":"4.0",
+    "date":"08.07.2024",
+    "language":"iPhone shortcut",
+    "developer":"@Wajsar_Josef",
+    "github_path":"https://github.com/PepikVaio/reMarkable_Send_to...",
+    "description":[
+      "The shortcut is used to send content from safari to reMarkable (article, image, ...)",
+      "",
+      "(cs) Zkratka slouží k odeslání obsahu ze safari do reMarkable (článek, obrázek, …)"
+    ]
+  },
+   
+  "release":{
+    "title":"New Update!",
+    "content":[
+      "A new version is available, please update before continuing.",
+      "You will be redirected to the Github page for the download and some shortcut data will also be deleted.",
+      "",
+      "(cs) Nová aktualizace!",
+      "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
+      "Budete přesměrováni na stránku Github pro stažení a také se smažou některé data zkratky."
+    ],
+    "news":[
+      "* Added check for new updates.",
+      "* Moving the texts to the Github server and the ability to correct errors in the text on the fly.",
+      "* Saving configuration files to iCloud Drive.",
+      "* Changed the notification for inserting edited text.",
+      "",
+      "* (cs) Přidaná kontrola nových aktualizací.",
+      "* Přesun textů na Github server a možnosti opravovat chyby v textu za běhu.",
+      "* Ukládání konfiguračních souborů na iCloud Drive.",
+      "* Změna oznámení o vložení upraveného textu."
+    ]
+  },
+   
+  "menu":{
+    "info":[
+      "Select a PDF style (each one fits a different web pages).",
+      "",
+      "(cs) Vyberte styl PDF (každý se hodí pro jiné webové stránky)."
+    ],
+    "01":{
+      "title":"Apple PDF"
+    },
+    "02":{
+      "title":"PC version / PC verze"
+    },
+    "03":{
+      "title":"HTML for ePub / HTML pro ePub"
+    },
+    "04":{
+      "title":"Just images / Pouze obrázky",
+      "content_01":"Select images. / (cs) Zvolte obrázky.",
+      "question_01": {
+        "title": [
+          "Do you want to adjust the image size?",
+          "",
+          "(cs) Chcete upravit velikost obrázku?"
+        ],
+        "answer_01_content":[
+          "Select the width of the image",
+          "",
+          "(cs) Zvolte šířku obrázku"
+        ]
+      },
+      "question_02": {
+        "title": [
+          "How do you wish to combine the images?",
+          "",
+          "(cs) Jak si přejete spojit obrázky?"
+        ]
+      }
+    },
+    "05":{
+      "title":"Screenshot / Snímek obrazovky",
+      "question_01": {
+        "title": [
+          "Do you have a full screen shot created and copied to the clipboard?",
+          "",
+          "(cs) Máte vytvořený snímek celé obrazovky a zkopírovaný ve schránce?"
+        ],
+        "answer_02_title":"Take a screenshot of the entire screen!",
+        "answer_02_content":[
+          "Copy it to the clipboard, then run the shortcut again.",
+          "",
+          "(cs) Vytvořte snímek celé obrazovky!",
+          "Zkopírujte jej do schránky, poté opět spusťte zkratku."
+        ],
+        "answer_03_title":"YouTube video will play!",
+        "answer_03_content":[
+          "After viewing, run the shortcut again. ",
+          "",
+          "(cs) Přehraje se YouTube video!",
+          "Po zhlédnutí opět spusťte zkratku. "
+        ],
+        "answer_03_url":[
+          "https://youtube.com/playlist?list=PL_EByhPygE7KMhG8dFomBlpF11fodE9en&si=mRWuF0zYBaheVh8Q"
+        ]
+      }
+    },
+    "06":{
+      "title":"Readability"
+    },
+    "result": {
+      "file_Name": [
+        "Enter a file name.",
+        "",
+        "(cs) Zadejte název souboru"
+      ],
+      "title": "Done!",
+      "content": [
+        "The PDF has been uploaded to the reMarkable tablet, check if everything is OK and choose another type of conversion if necessary.",
+        "",
+        "(cs) Hotovo!",
+        "PDF bylo nahráno do tabletu reMarkable, zkontrolujte, zda je vše v pořádku a v případě potřeby zvolte jiný typ převodu."
+      ]
+    }
+  } 
+}
