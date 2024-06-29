@@ -22,15 +22,15 @@
       
     "label_cs":{
       "welcome":[
-        "Vítejte ve zkratce:",
-        "•—————————•",
+        " Vítejte ve zkratce:",
+        "•——————————•",
       ],
       "title":"Název:",
       "version":"Verze:",
       "developer":"Vývojář:",
       "description":[
         " Popis:",
-        "•————•",
+        "•———•",
         "Kratky popis co dela aplikace"
       ],
     },
