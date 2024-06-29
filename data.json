@@ -6,32 +6,33 @@
     "github_path":"https://github.com/PepikVaio/reMarkable_Extractor...",
 
     "label":{
-      "title":[
-        "Welcome to",
-        "------------------------------"
+      "welcome":[
+        "*** Welcome to Apple Shortcut ***",
+        "-----------------------------------"
       ],
+      "title":"Name:",
       "version":"Version:",
       "developer":"Developer:",
       "description":[
         "*** Description: ***",
-        "--------------------",
-        "The shortcut allows you to extract individual pages of a pdf file from reMarkable and saves it as a new pdf file.",
-        "You can also save the pdf file as plain text."
-      ],
+        "-------------------",
+        "Create new *pdf files on your reMarkable.",
+        "Create plain text from *pdf files on your reMarkable."      ],
     },
       
     "label_cs":{
-      "title":[
-        "Vítejte v",
-        "--------------------------"
+      "welcome":[
+        "*** Vitejte v Apple Shortcut ***",
+        "-------------------------------"
       ],
+      "title":"Název:",
       "version":"Verze:",
       "developer":"Vývojář:",
       "description":[
         "*** Popis: ***",
         "-------------",
-        "Zkratka vám umožní exktrahovat jednotlivé stránky pdf souboru z reMarkable a uloží jej jako nový pdf soubor.",
-        "Pdf soubor můžete také uložit jako prostý text." 
+        "Vytvářejte nové *pdf soubory na svém reMarkable.",
+        "Vytvářejte prostý text z *pdf souborů na svém reMarkable."
       ],
     },
   },
