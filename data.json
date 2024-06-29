@@ -37,15 +37,15 @@
   },
     
   "menu":{
-    "info_en":"Choose an extraction style (each one fits a different web pages).",
+    "info":"Choose an extraction style (each one fits a different web pages).",
     "info_cs":"Vyberte styl extrakce (každý se hodí pro jiné webové stránky).",
     },
     "01":{
-      "title_en":"Extract like text",
+      "title":"Extract like text",
       "title_cs":"Extrahovat jako text"
     },
     "02":{
-      "title_en":"Extract like image",
+      "title":"Extract like image",
       "title_cs":"Extrahovat jako obrázky"
     }
   } 
