@@ -39,7 +39,7 @@
   "menu":{
     "info":"Choose an extraction style (each one fits a different web pages).",
     "info_cs":"Vyberte styl extrakce (každý se hodí pro jiné webové stránky).",
-    },
+    
     "01":{
       "title":"Extract like text",
       "title_cs":"Extrahovat jako text"
@@ -48,5 +48,5 @@
       "title":"Extract like image",
       "title_cs":"Extrahovat jako obrázky"
     }
-  } 
+  }
 }
