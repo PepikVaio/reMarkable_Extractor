@@ -47,6 +47,27 @@
     "02":{
       "title":"Extract like image",
       "title_cs":"Extrahovat jako obrázky"
+    },
+    "03":{
+      "title":"Settings",
+      "title_cs":"Nastavení",
+        
+      "01":{
+        "title":"About",
+        "title_cs":"O zkratce",
+      },
+      "02":{
+        "title":"Send feedback",
+        "title_cs":"O zkratce",
+      },
+      "03":{
+        "title":"Reset settings",
+        "title_cs":"Resetovat nastavení",
+      },
+      "04":{
+        "title":"< Back",
+        "title_cs":"< Zpět",
+      },
     }
   }
 }
