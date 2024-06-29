@@ -6,34 +6,20 @@
     "github_path":"https://github.com/PepikVaio/reMarkable_Extractor...",
 
     "label":{
-      "welocme":[
-        "Welcome to shortcut!",
-        "•——————————————————•",
-      ],
+      "welocme":"Welcome to shortcut! \n •——————————————————•",
       "title":"Name",
       "version":"Version",
       "developer":"Developer",
-      "description":[
-        "Description!",
-        "•——————————•",
-        "Kratky popis co dela aplikace"
-      ],
+      "description":"Description! \n •——————————• \n Kratky popis co dela aplikace"
     },
       
     "label_cs":{
-      "welocme":[
-        "Vítejte ve zkratce!",
-        "•—————————————————•",
-      ],
+      "welocme":"Vítejte ve zkratce! \n •—————————————————•",
       "title":"Název",
       "version":"Verze",
       "developer":"Vývojář",
-      "description":[
-        "Popis!",
-        "•————•",
-        "Kratky popis co dela aplikace"
-      ],
-    },
+      "description":"Popis! \n •————• \n Kratky popis co dela aplikace"
+    }
   },
    
   "release":{
