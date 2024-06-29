@@ -37,28 +37,34 @@
   },
     
   "menu":{
-    "info":"Choose an extraction style (each one fits a different web pages).",
-    "info_cs":"Vyberte styl extrakce (každý se hodí pro jiné webové stránky).",
+    "title":"Choose an extraction style (each one fits a different web pages).",
+    "title_cs":"Vyberte styl extrakce (každý se hodí pro jiné webové stránky).",
     
     "01":{
       "title":"Extract like text",
-      "title_cs":"Extrahovat jako text"
+      "title_cs":"Extrahovat jako text",
+      "content":"",
+      "content_cs":"",
     },
     "02":{
       "title":"Extract like image",
-      "title_cs":"Extrahovat jako obrázky"
+      "title_cs":"Extrahovat jako obrázky",
+      "content":"",
+      "content_cs":"",
     },
     "03":{
       "title":"Settings",
       "title_cs":"Nastavení",
-        
+      "content":"About, Send feedback, Reset settings",
+      "content_cs":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení",
+
       "01":{
         "title":"About",
         "title_cs":"O zkratce",
       },
       "02":{
         "title":"Send feedback",
-        "title_cs":"O zkratce",
+        "title_cs":"Poslat",
       },
       "03":{
         "title":"Reset settings",
