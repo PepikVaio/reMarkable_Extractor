@@ -2,16 +2,41 @@
   "info":{
     "title":"Extractor!",
     "version":"1.1",
-    "date":"",
-    "language":"iPhone shortcut",
     "developer":"@Wajsar_Josef",
     "github_path":"https://github.com/PepikVaio/reMarkable_Extractor...",
-    "description":[
-      "",
-      "",
-      "(cs)"
-    ]
-   },
+
+    "label":{
+      "welocme":[
+        "Welcome to",
+        "•————————•",
+        ""
+      ],
+      "title":"Name:",
+      "version":"Version:",
+      "developer":"Developer:",
+      "description":[
+        "Description:",
+        "•——————————•",
+        ""
+      ],
+    },
+      
+    "label_cs":{
+      "welocme":[
+        "Vítejte v",
+        "•———————•",
+        ""
+      ],
+      "title":"Název:",
+      "version":"Verze:",
+      "developer":"Vývojář:",
+      "description":[
+        "Popis:",
+        "•————•",
+        ""
+      ],
+    },
+  },
    
   "release":{
     "title":"New Update!",
