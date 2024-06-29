@@ -34,5 +34,21 @@
       "* ",
       "* "
     ]
-  }
+  },
+    
+  "menu":{
+    "info":[
+      "Select a PDF style (each one fits a different web pages).",
+      "",
+      "(cs) Vyberte styl PDF (každý se hodí pro jiné webové stránky)."
+    ],
+    "01":{
+      "title":"first",
+      "title_cs":"prvni"
+    },
+    "02":{
+      "title":"second",
+      "title_cs":"druhy"
+    }
+  } 
 }
