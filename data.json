@@ -114,22 +114,11 @@
         "title":"Nastavení",
         "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
-        "01":{
-          "title":"O zkratce",
-        },
-        "02":{
-          "title":"Poslat zpětnou vazbu",
-        },
-        "03":{
-          "title":"Resetovat nastavení",
-        },
-        "04":{
-          "title":"< Zpět",
-        },
+        "label_01":"O zkratce",
+        "label_02":"Poslat zpětnou vazbu",
+        "label_03":"Resetovat nastavení",
+        "label_04":"< Zpět"
       }
     },
-      
-    
-
   }
 }
