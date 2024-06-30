@@ -93,8 +93,16 @@
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
+        "title_01":"┃*** About! ***",
+
         "label_02":"Send feedback",
+        "title_02":"┃*** Send feedback! ***",
+        "content_02":"",
+        
         "label_03":"Reset settings",
+        "title_03":"┃*** Reset settings! ***",
+        "content_03":"",
+        
         "label_04":"❮ Back",
       }
     },
