@@ -40,7 +40,7 @@
    
   "release":{
       
-    lang_en: {
+    "lang_en": {
       "title": [
         "*** New Update! ***",
         "-------------------"
@@ -57,7 +57,7 @@
       ],
     },
       
-    lang_cs: {
+    "lang_cs": {
       "title": [
         "*** Nová aktualizace! ***",
         "-------------------------"
