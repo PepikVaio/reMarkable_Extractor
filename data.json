@@ -89,7 +89,7 @@
         "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
-        "title":"⚙️ Settings",
+        "title":"Settings",
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
@@ -111,7 +111,7 @@
         "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
       "03":{
-        "title":"⚙️ Nastavení",
+        "title":"Nastavení",
         "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
         "label_01":"O zkratce",
