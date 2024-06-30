@@ -105,8 +105,10 @@
         "content_02_01": "Device:",
         "content_02_02": "System version:",
         "content_02_03": [
-          "Thank you for sending me feedback, I appreciate it!",
-          "I will try to reply as soon as possible."
+          "",
+          "Thank you for sending email.",
+          "I will try to reply as soon as possible.",
+          "",
         ]
       }
     },
@@ -134,8 +136,10 @@
         "content_02_01": "Zařízení:",
         "content_02_02": "Verze systému:",
         "content_02_03": [
-          "Děkuji za zaslání zpětné vazby, vážím si toho!",
-          "Pokusím se odpovědět co nejdříve."
+          "",
+          "Děkuji za zaslání emailu.",
+          "Pokusím se odpovědět co nejdříve.",
+          ""
         ]
       }
     },
