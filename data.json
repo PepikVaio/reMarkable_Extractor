@@ -81,15 +81,15 @@
       "title":"Select extraction style!",
         
       "01":{
-        "title":"📚 Extract as text",
+        "title":"Extract as text",
         "content":"Plain text is extracted, without images ...",
       },      
       "02":{
-        "title":"🖼 Extract as images",
+        "title":"Extract as images",
         "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
-        "title":"⚙️ Settings",
+        "title":"Settings",
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
@@ -103,15 +103,15 @@
       "title":"Vyberte styl extrakce!",
 
       "01":{
-        "title":"📚 Extrahovat jako text",
+        "title":" Extrahovat jako text",
         "content":"Vyextrahuje se prostý text, bez obrázků ...",
       },      
       "02":{
-        "title":"🖼 Extrahovat jako obrázky",
+        "title":"Extrahovat jako obrázky",
         "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
       "03":{
-        "title":"⚙️ Nastavení",
+        "title":"Nastavení",
         "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
         "label_01":"O zkratce",
