@@ -8,7 +8,7 @@
     "lang_en":{
       "welcome":[
         "┃*** Welcome to Apple Shortcuts! ***",
-        "┃Create your own pdf from their pdf like magic"
+        "┃Create your own pdf like magic"
       ],
       "title":"  Name:",
       "version":"  Version:",
@@ -16,15 +16,15 @@
       "description":[
         "  *** Description: ***",
         "  --------------------",
-        "    * Create new *pdf files on your reMarkable.",
-        "    * Create plain text from *pdf files on your reMarkable."
+        "    * Create *pdf on your reMarkable.",
+        "    * Create *text on your reMarkable."
       ],
     },
       
     "lang_cs":{
       "welcome":[
         "┃*** Vitejte v Apple Shortcuts! ***",
-        "┃Vytvořte si vlastní pdf z jejich pdf jako kouzlo"
+        "┃Vytvořte si vlastní pdf jako kouzlo"
       ],
       "title":"  Název:",
       "version":"  Verze:",
@@ -32,8 +32,8 @@
       "description":[
         "  *** Popis: ***",
         "  -------------",
-        "    * Vytvářejte nové *pdf soubory na svém reMarkable.",
-        "    * Vytvářejte prostý text z *pdf souborů na svém reMarkable."
+        "    * Vytvářejte *pdf na svém reMarkable.",
+        "    * Vytvářejte *text na svém reMarkable."
       ],
     },
   },
