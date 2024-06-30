@@ -76,6 +76,10 @@
   },
     
   "menu":{
+      
+    "start_Title":"┃*** ",
+    "end_Title":"! ***",
+    "icon_back":"❮ ",
 
     "lang_en": {
       "title":"Select extraction style!",
@@ -93,17 +97,9 @@
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
-        "title_01":"┃*** About! ***",
-
         "label_02":"Send feedback",
-        "title_02":"┃*** Send feedback! ***",
-        "content_02":"",
-        
         "label_03":"Reset settings",
-        "title_03":"┃*** Reset settings! ***",
-        "content_03":"",
-        
-        "label_04":"❮ Back",
+        "label_04":"Back",
       }
     },
       
@@ -125,7 +121,7 @@
         "label_01":"O zkratce",
         "label_02":"Poslat zpětnou vazbu",
         "label_03":"Resetovat nastavení",
-        "label_04":"❮ Zpět"
+        "label_04":"Zpět"
       }
     },
   }
