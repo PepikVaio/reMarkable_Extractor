@@ -10,14 +10,14 @@
         "┃*** Welcome to Apple Shortcuts! ***",
         "┃Create your own pdf like magic"
       ],
-      "title":"  Name:",
-      "version":"  Version:",
-      "developer":"  Developer:",
+      "title":"Name:",
+      "version":"Version:",
+      "developer":"Developer:",
       "description":[
-        "  *** Description: ***",
-        "  --------------------",
-        "    * Create *pdf on your reMarkable.",
-        "    * Create *text on your reMarkable."
+        "*** Description: ***",
+        "--------------------",
+        "  * Create *pdf on your reMarkable.",
+        "  * Create *text on your reMarkable."
       ],
     },
       
@@ -26,14 +26,14 @@
         "┃*** Vitejte v Apple Shortcuts! ***",
         "┃Vytvořte si vlastní pdf jako kouzlo"
       ],
-      "title":"  Název:",
-      "version":"  Verze:",
-      "developer":"  Vývojář:",
+      "title":"Název:",
+      "version":"Verze:",
+      "developer":"Vývojář:",
       "description":[
-        "  *** Popis: ***",
-        "  -------------",
-        "    * Vytvářejte *pdf na svém reMarkable.",
-        "    * Vytvářejte *text na svém reMarkable."
+        "*** Popis: ***",
+        "-------------",
+        "  * Vytvářejte *pdf na svém reMarkable.",
+        "  * Vytvářejte *text na svém reMarkable."
       ],
     },
   },
@@ -46,14 +46,14 @@
         "┃A new version is available."
       ],
       "content":[
-        "  Please update before continuing.",
-        "  You will be redirected to the Github page for the download."
+        "Please update before continuing.",
+        "You will be redirected to the Github page for the download."
       ],
       "news":[
-        "  *** News in version: ***",
-        "  ------------------------",
-        "    * ",
-        "    * "
+        "*** News in version: ***",
+        "------------------------",
+        "  * ",
+        "  * "
       ],
     },
       
@@ -63,14 +63,14 @@
         "┃K dispozici je nová verze"
       ],
       "content":[
-        "  Před pokračováním prosím aktualizujte.",
-        "  Budete přesměrováni na stránku Github pro stažení.",
+        "Před pokračováním prosím aktualizujte.",
+        "Budete přesměrováni na stránku Github pro stažení.",
       ],
       "news":[
-        "  *** Novinky ve verzi: ***",
-        "  ------------------------",
-        "    * ",
-        "    * "
+        "*** Novinky ve verzi: ***",
+        "------------------------",
+        "  * ",
+        "  * "
       ]
     },
   },
@@ -89,7 +89,7 @@
         "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
-        "title":"Settings",
+        "title":"⚙️ Settings",
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
@@ -111,7 +111,7 @@
         "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
       "03":{
-        "title":"Nastavení",
+        "title":"⚙️ Nastavení",
         "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
         "label_01":"O zkratce",
