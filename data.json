@@ -15,9 +15,10 @@
       "developer":"Developer:",
       "description":[
         "*** Description: ***",
-        "-------------------",
+        "--------------------",
         "Create new *pdf files on your reMarkable.",
-        "Create plain text from *pdf files on your reMarkable."      ],
+        "Create plain text from *pdf files on your reMarkable."
+      ],
     },
       
     "label_cs":{
@@ -39,48 +40,49 @@
    
   "release":{
     "title":"New Update!",
+    "title_cs":"Nová aktualizace!",
+
     "content":[
       "A new version is available, please update before continuing.",
-      "You will be redirected to the Github page for the download and some shortcut data will also be deleted.",
-      "",
-      "(cs) Nová aktualizace!",
-      "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
-      "Budete přesměrováni na stránku Github pro stažení a také se smažou některé data zkratky."
+      "You will be redirected to the Github page for the download."
     ],
+    "content_cs":[
+      "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
+      "Budete přesměrováni na stránku Github pro stažení."
+    ],
+
     "news":[
-      "* Added check for new updates.",
       "* ",
-      "* ",
-      "* ",
-      "",
-      "* (cs) Přidaná kontrola nových aktualizací.",
-      "* ",
+      "* "
+    ],
+
+    "news_cs":[
       "* ",
       "* "
     ]
   },
     
   "menu":{
-    "title":"Choose an extraction style (each one fits a different web pages).",
-    "title_cs":"Vyberte styl extrakce (každý se hodí pro jiné webové stránky).",
+    "title":"Choose an extraction style!",
+    "title_cs":"Vyberte styl extrakce!",
     
     "01":{
       "title":"Extract like text",
       "title_cs":"Extrahovat jako text",
-      "content":"",
-      "content_cs":"",
+      "content":"Plain text is extracted, without images ...",
+      "content_cs":"Vyextrahuje se prostý text, bez obrázků ...",
     },
     "02":{
       "title":"Extract like image",
       "title_cs":"Extrahovat jako obrázky",
-      "content":"",
-      "content_cs":"",
+      "content":"The appearance of the pdf will not change, the images will be preserved ...",
+      "content_cs":"Vzhled pdf se nezmění, obrázky budou zachované ...",
     },
     "03":{
       "title":"Settings",
       "title_cs":"Nastavení",
-      "content":"About, Send feedback, Reset settings",
-      "content_cs":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení",
+      "content":"About, Send feedback, Reset settings ...",
+      "content_cs":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
       "01":{
         "title":"About",
@@ -88,7 +90,7 @@
       },
       "02":{
         "title":"Send feedback",
-        "title_cs":"Poslat",
+        "title_cs":"Poslat zpětnou vazbu",
       },
       "03":{
         "title":"Reset settings",
