@@ -89,13 +89,13 @@
         "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
-        "title":"Settings",
+        "title":"⚙️ Settings",
         "content":"About, Send feedback, Reset settings ...",
 
         "label_01":"About",
         "label_02":"Send feedback",
         "label_03":"Reset settings",
-        "label_04":"< Back",
+        "label_04":"❮ Back",
       }
     },
       
@@ -111,13 +111,13 @@
         "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
       "03":{
-        "title":"Nastavení",
+        "title":"⚙️ Nastavení",
         "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
         "label_01":"O zkratce",
         "label_02":"Poslat zpětnou vazbu",
         "label_03":"Resetovat nastavení",
-        "label_04":"< Zpět"
+        "label_04":"❮ Zpět"
       }
     },
   }
