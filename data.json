@@ -76,43 +76,60 @@
   },
     
   "menu":{
-    "title":"Choose an extraction style!",
-    "title_cs":"Vyberte styl extrakce!",
-    
-    "01":{
-      "title":"Extract like text",
-      "title_cs":"Extrahovat jako text",
-      "content":"Plain text is extracted, without images ...",
-      "content_cs":"Vyextrahuje se prostý text, bez obrázků ...",
-    },
-    "02":{
-      "title":"Extract like image",
-      "title_cs":"Extrahovat jako obrázky",
-      "content":"The appearance of the pdf will not change, the images will be preserved ...",
-      "content_cs":"Vzhled pdf se nezmění, obrázky budou zachované ...",
-    },
-    "03":{
-      "title":"Settings",
-      "title_cs":"Nastavení",
-      "content":"About, Send feedback, Reset settings ...",
-      "content_cs":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
 
+    "lang_en": {
+      "title":"Choose an extraction style!",
+        
       "01":{
-        "title":"About",
-        "title_cs":"O zkratce",
-      },
+        "title":"Extract like text",
+        "content":"Plain text is extracted, without images ...",
+      },      
       "02":{
-        "title":"Send feedback",
-        "title_cs":"Poslat zpětnou vazbu",
+        "title":"Extract like image",
+        "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
-        "title":"Reset settings",
-        "title_cs":"Resetovat nastavení",
+        "title":"Settings",
+        "content":"About, Send feedback, Reset settings ...",
+
+        "label_01":"About",
+        "label_02":"Send feedback",
+        "label_03":"Reset settings",
+        "label_04":"< Back",
+      }
+    },
+      
+    "lang_cs": {
+      "title":"Vyberte styl extrakce!",
+
+      "01":{
+        "title":"Extrahovat jako text",
+        "content":"Vyextrahuje se prostý text, bez obrázků ...",
+      },      
+      "02":{
+        "title":"Extrahovat jako obrázky",
+        "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
-      "04":{
-        "title":"< Back",
-        "title_cs":"< Zpět",
-      },
-    }
+      "03":{
+        "title":"Nastavení",
+        "content":"O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
+
+        "01":{
+          "title":"O zkratce",
+        },
+        "02":{
+          "title":"Poslat zpětnou vazbu",
+        },
+        "03":{
+          "title":"Resetovat nastavení",
+        },
+        "04":{
+          "title":"< Zpět",
+        },
+      }
+    },
+      
+    
+
   }
 }
