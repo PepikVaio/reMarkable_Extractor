@@ -5,7 +5,7 @@
     "developer":"@Wajsar_Josef",
     "github_path":"https://github.com/PepikVaio/reMarkable_Extractor...",
 
-    "label":{
+    "lang_en":{
       "welcome":[
         "*** Welcome to Apple Shortcut ***",
         "-----------------------------------"
@@ -21,7 +21,7 @@
       ],
     },
       
-    "label_cs":{
+    "lang_cs":{
       "welcome":[
         "*** Vitejte v Apple Shortcut ***",
         "-------------------------------"
@@ -39,27 +39,40 @@
   },
    
   "release":{
-    "title":"New Update!",
-    "title_cs":"Nová aktualizace!",
-
-    "content":[
-      "A new version is available, please update before continuing.",
-      "You will be redirected to the Github page for the download."
-    ],
-    "content_cs":[
-      "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
-      "Budete přesměrováni na stránku Github pro stažení."
-    ],
-
-    "news":[
-      "* ",
-      "* "
-    ],
-
-    "news_cs":[
-      "* ",
-      "* "
-    ]
+      
+    lang_en: {
+      "title": [
+        "*** New Update! ***",
+        "-------------------"
+      ],
+      "content":[
+        "A new version is available, please update before continuing.",
+        "You will be redirected to the Github page for the download."
+      ],
+      "news":[
+        "*** News in version: ***",
+        "------------------------",
+        "* ",
+        "* "
+      ],
+    },
+      
+    lang_cs: {
+      "title": [
+        "*** Nová aktualizace! ***",
+        "-------------------------"
+      ],
+      "content":[
+        "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
+        "Budete přesměrováni na stránku Github pro stažení.",
+      ],
+      "news":[
+        "*** Novinky ve verzi: ***",
+        "------------------------",
+        "* ",
+        "* "
+      ]
+    },
   },
     
   "menu":{
