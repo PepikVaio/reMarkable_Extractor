@@ -7,33 +7,33 @@
 
     "lang_en":{
       "welcome":[
-        "*** Welcome to Apple Shortcuts ***",
-        "------------------------------------"
+        "┃*** Welcome to Apple Shortcuts! ***",
+        "┃Create your own pdf from their pdf like magic"
       ],
-      "title":"Name:",
-      "version":"Version:",
-      "developer":"Developer:",
+      "title":"  Name:",
+      "version":"  Version:",
+      "developer":"  Developer:",
       "description":[
-        "*** Description: ***",
-        "--------------------",
-        "Create new *pdf files on your reMarkable.",
-        "Create plain text from *pdf files on your reMarkable."
+        "  *** Description: ***",
+        "  --------------------",
+        "    * Create new *pdf files on your reMarkable.",
+        "    * Create plain text from *pdf files on your reMarkable."
       ],
     },
       
     "lang_cs":{
       "welcome":[
-        "*** Vitejte v Apple Shortcuts ***",
-        "--------------------------------"
+        "┃*** Vitejte v Apple Shortcuts! ***",
+        "┃Vytvořte si vlastní pdf z jejich pdf jako kouzlo"
       ],
-      "title":"Název:",
-      "version":"Verze:",
-      "developer":"Vývojář:",
+      "title":"  Název:",
+      "version":"  Verze:",
+      "developer":"  Vývojář:",
       "description":[
-        "*** Popis: ***",
-        "-------------",
-        "Vytvářejte nové *pdf soubory na svém reMarkable.",
-        "Vytvářejte prostý text z *pdf souborů na svém reMarkable."
+        "  *** Popis: ***",
+        "  -------------",
+        "    * Vytvářejte nové *pdf soubory na svém reMarkable.",
+        "    * Vytvářejte prostý text z *pdf souborů na svém reMarkable."
       ],
     },
   },
@@ -42,35 +42,35 @@
       
     "lang_en": {
       "title": [
-        "*** New Update! ***",
-        "-------------------"
+        "┃*** New Update! ***",
+        "┃A new version is available."
       ],
       "content":[
-        "A new version is available, please update before continuing.",
-        "You will be redirected to the Github page for the download."
+        "  Please update before continuing.",
+        "  You will be redirected to the Github page for the download."
       ],
       "news":[
-        "*** News in version: ***",
-        "------------------------",
-        "* ",
-        "* "
+        "  *** News in version: ***",
+        "  ------------------------",
+        "    * ",
+        "    * "
       ],
     },
       
     "lang_cs": {
       "title": [
-        "*** Nová aktualizace! ***",
-        "-------------------------"
+        "┃*** Nová aktualizace! ***",
+        "┃K dispozici je nová verze"
       ],
       "content":[
-        "K dispozici je nová verze, před pokračováním prosím aktualizujte.",
-        "Budete přesměrováni na stránku Github pro stažení.",
+        "  Před pokračováním prosím aktualizujte.",
+        "  Budete přesměrováni na stránku Github pro stažení.",
       ],
       "news":[
-        "*** Novinky ve verzi: ***",
-        "------------------------",
-        "* ",
-        "* "
+        "  *** Novinky ve verzi: ***",
+        "  ------------------------",
+        "    * ",
+        "    * "
       ]
     },
   },
@@ -81,11 +81,11 @@
       "title":"Choose an extraction style!",
         
       "01":{
-        "title":"Extract like text",
+        "title":"📚 Extract as text",
         "content":"Plain text is extracted, without images ...",
       },      
       "02":{
-        "title":"Extract like image",
+        "title":"🖼 Extract as images",
         "content":"The appearance of the pdf will not change, the images will be preserved ...",
       },
       "03":{
@@ -103,11 +103,11 @@
       "title":"Vyberte styl extrakce!",
 
       "01":{
-        "title":"Extrahovat jako text",
+        "title":"📚 Extrahovat jako text",
         "content":"Vyextrahuje se prostý text, bez obrázků ...",
       },      
       "02":{
-        "title":"Extrahovat jako obrázky",
+        "title":"🖼 Extrahovat jako obrázky",
         "content":"Vzhled pdf se nezmění, obrázky budou zachované ...",
       },
       "03":{
