@@ -9,7 +9,7 @@
     "lang_en":{
       "welcome":[
         "┃*** Welcome to Apple Shortcuts! ***",
-        "┃Create your own pdf like magic"
+        "┃Create your own *pdf like magic"
       ],
       "title":"Name:",
       "version":"Version:",
@@ -25,7 +25,7 @@
     "lang_cs":{
       "welcome":[
         "┃*** Vitejte v Apple Shortcuts! ***",
-        "┃Vytvořte si vlastní pdf jako kouzlo"
+        "┃Vytvořte si vlastní *pdf jako kouzlo"
       ],
       "title":"Název:",
       "version":"Verze:",
