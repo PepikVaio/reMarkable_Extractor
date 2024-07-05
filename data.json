@@ -149,9 +149,7 @@
 
   "replaces": {
     "tecka": [
-        ".",
-        "",
-        "    "
+        ".\n"
     ],
     "vykricnik": [
         "!",
