@@ -148,18 +148,8 @@
   },
 
   "replaces": {
-    "tecka": [
-        ".\n"
-    ],
-    "vykricnik": [
-        "!",
-        "",
-        "    "
-    ],
-    "otaznik": [
-        "?",
-        "",
-        "    "
-    ]
+    "dot": ".\n\n\t",
+    "exclamation_mark": "!\n\n\t",
+    "question_mark": "?\n\n\t"
   }
 }
