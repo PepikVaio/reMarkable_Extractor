@@ -148,9 +148,9 @@
   },
 
   "replaces": {
-    "dot": ".\n\n\t",
-    "exclamation_mark": "!\n\n\t",
-    "question_mark": "?\n\n\t",
+    "dot": ".\n\n",
+    "exclamation_mark": "!\n\n",
+    "question_mark": "?\n\n",
       
     "line_break": "\n"
   }
