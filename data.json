@@ -136,6 +136,7 @@
 
     "lang_en": {
       "title": "Select extraction style!",
+      "page": "Page",
 
       "01": {
         "title": "Extract as text",
@@ -166,6 +167,7 @@
 
     "lang_cs": {
       "title": "Vyberte styl extrakce!",
+      "page": "strana",
 
       "01": {
         "title": "Extrahovat jako text",
