@@ -42,13 +42,18 @@
   "release":{
       
     "lang_en": {
-      "title": [
+      "title_01": [
         "┃*** New Update! ***",
         "┃A new version is available."
       ],
       "content":[
         "Please update before continuing.",
-        "You will be redirected to the Github page for the download."
+        "You will be redirected to the Github page to download the new version."
+      ],
+
+      "title_02": [
+        "┃*** Update installed! ***",
+        "┃Great, you have the latest version."
       ],
       "news":[
         "*** News in version: ***",
@@ -59,13 +64,17 @@
     },
       
     "lang_cs": {
-      "title": [
+      "title_01": [
         "┃*** Nová aktualizace! ***",
         "┃K dispozici je nová verze"
       ],
       "content":[
         "Před pokračováním prosím aktualizujte.",
-        "Budete přesměrováni na stránku Github pro stažení.",
+        "Budete přesměrováni na stránku Github pro stažení nové verze.",
+      ],
+      "title_02": [
+        "┃*** Aktualizace nainstalovaná! ***",
+        "┃Skvělé, máte aktuální verzi"
       ],
       "news":[
         "*** Novinky ve verzi: ***",
@@ -83,11 +92,21 @@
       "content": [
         "Dear user,",
         "Thank you for downloading my shortcut. I hope it will be useful to you and brighten your day. If you have any questions or feedback, please feel free to contact me.",
+        "",
         "*** Voluntary Contributions! ***",
         "----------------------------",
         "  * My shortcut is completely free and all its features are available at no cost. However, if you would like to support further development and appreciate my work, you can make a voluntary contribution.",
         "",
         "  * All information can be found in the 'About Shortcuts' section in 'Settings'.",
+      ],
+      "payment": [
+        "*** If you decide to contribute! ***",
+        "-----------------------------------",
+        "Account number: 1358053048/3030",
+        "Message to recipient: name AppleShortcuts",
+        "",
+        "  * Your support will help me improve the app and bring new features and updates. Thank you in advance for your kindness and contribution!",
+        "  * Thank you again for your trust and I wish you a pleasant use of the app!"
       ]
     },
 
@@ -96,12 +115,21 @@
       "content": [
         "Vážený uživateli,",
         "Děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
-        "",
+        "Message to beneficiaries: Name of AppleShortcuts",
         "*** Dobrovolné příspěvky! ***",
         "----------------------------",
         "  * Moje zkratka je zcela zdarma a veškeré její funkce jsou dostupné bez jakýchkoli poplatků. Pokud však chcete podpořit další vývoj a ocenit moji práci, můžete přispět dobrovolným příspěvkem.",
         "",
         "  * Veškeré info najdete v části 'O zkratce' v 'Nastavení'."
+      ],
+      "payment": [
+        "*** Pokud se rozhodnete přispět! ***",
+        "-----------------------------------",
+        "Číslo účtu: 1358053048/3030",
+        "Zpráva pro příjemce: Název AppleShortcuts",
+        "",
+        "  * Vaše podpora mi pomůže zlepšovat aplikaci a přinášet nové funkce a aktualizace. Předem děkuji za vaši laskavost a příspěvek!",
+        "  * Ještě jednou děkuji za vaši důvěru a přeji vám příjemné používání aplikace!"
       ]
     }
   },
