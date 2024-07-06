@@ -79,20 +79,6 @@
   "thank_you": {
 
     "lang_en": {
-      "title": "Děkuji za stažení mojí Apple Shortcuts! ***",
-      "content": [
-        "Vážený uživateli,",
-        "Děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
-        "",
-        "*** Dobrovolné příspěvky! ***",
-        "----------------------------",
-        "  * Moje zkratka je zcela zdarma a veškeré její funkce jsou dostupné bez jakýchkoli poplatků. Pokud však chcete podpořit další vývoj a ocenit moji práci, můžete přispět dobrovolným příspěvkem."
-        "",
-        "  * Veškeré info najdete v části 'O zkratce' v 'Nastavení'."
-      ]
-    },
-    
-    "lang_cs": {
       "title": "Thank you for downloading my Apple Shortcuts!",
       "content": [
         "Dear user,",
@@ -104,6 +90,21 @@
         "  * All information can be found in the 'About Shortcuts' section in 'Settings'.",
       ]
     },
+
+    "lang_cs": {
+      "title": "Děkuji za stažení mojí Apple Shortcuts! ***",
+      "content": [
+        "Vážený uživateli,",
+        "Děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
+        "",
+        "*** Dobrovolné příspěvky! ***",
+        "----------------------------",
+        "  * Moje zkratka je zcela zdarma a veškeré její funkce jsou dostupné bez jakýchkoli poplatků. Pokud však chcete podpořit další vývoj a ocenit moji práci, můžete přispět dobrovolným příspěvkem.",
+        "",
+        "  * Veškeré info najdete v části 'O zkratce' v 'Nastavení'."
+      ]
+    }
+  },
 
   "menu":{
       
