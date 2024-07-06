@@ -16,7 +16,7 @@
       "developer":"Developer:",
       "description":[
         "*** Description: ***",
-        "--------------------",
+        "-------------------",
         "  * Create *pdf on your reMarkable.",
         "  * Create *text on your reMarkable."
       ],
@@ -58,8 +58,7 @@
       "news":[
         "*** News in version: ***",
         "------------------------",
-        "  * ",
-        "  * "
+        "  * First release"
       ],
     },
       
@@ -79,8 +78,7 @@
       "news":[
         "*** Novinky ve verzi: ***",
         "------------------------",
-        "  * ",
-        "  * "
+        "  * První vydání"
       ]
     },
   },
@@ -88,48 +86,46 @@
   "thank_you": {
 
     "lang_en": {
-      "title": "Thank you for downloading my Apple Shortcuts!",
+      "title": "┃*** Thank you for downloading! ***",
       "content": [
-        "Dear user,",
-        "Thank you for downloading my shortcut. I hope it will be useful to you and brighten your day. If you have any questions or feedback, please feel free to contact me.",
+        "Dear user, thank you for downloading my shortcut. I hope it will be useful to you and brighten your day. If you have any questions or feedback, please feel free to contact me.",
         "",
         "*** Voluntary Contributions! ***",
-        "----------------------------",
+        "--------------------------------",
         "  * My shortcut is completely free and all its features are available at no cost. However, if you would like to support further development and appreciate my work, you can make a voluntary contribution.",
         "",
-        "  * All information can be found in the 'About Shortcuts' section in 'Settings'.",
+        "  * All information can be found in the 'About Shortcuts' section in 'Settings'."
       ],
       "payment": [
         "*** If you decide to contribute! ***",
-        "-----------------------------------",
+        "----------------------------------",
         "Account number: 1358053048/3030",
-        "Message to recipient: name AppleShortcuts",
+        "Message: [name appleshortcuts]",
         "",
         "  * Your support will help me improve the app and bring new features and updates. Thank you in advance for your kindness and contribution!",
-        "  * Thank you again for your trust and I wish you a pleasant use of the app!"
+        "  * Thank you again for your trust and I wish you a pleasant use of the shortcuts!"
       ]
     },
 
     "lang_cs": {
-      "title": "Děkuji za stažení mojí Apple Shortcuts! ***",
+      "title": "┃*** Děkuji za stažení! ***",
       "content": [
-        "Vážený uživateli,",
-        "Děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
-        "Message to beneficiaries: Name of AppleShortcuts",
+        "Vážený uživateli, děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
+        "",
         "*** Dobrovolné příspěvky! ***",
-        "----------------------------",
+        "------------------------------",
         "  * Moje zkratka je zcela zdarma a veškeré její funkce jsou dostupné bez jakýchkoli poplatků. Pokud však chcete podpořit další vývoj a ocenit moji práci, můžete přispět dobrovolným příspěvkem.",
         "",
         "  * Veškeré info najdete v části 'O zkratce' v 'Nastavení'."
       ],
       "payment": [
         "*** Pokud se rozhodnete přispět! ***",
-        "-----------------------------------",
+        "-------------------------------------",
         "Číslo účtu: 1358053048/3030",
-        "Zpráva pro příjemce: Název AppleShortcuts",
+        "Zpráva: [název zkratky]",
         "",
-        "  * Vaše podpora mi pomůže zlepšovat aplikaci a přinášet nové funkce a aktualizace. Předem děkuji za vaši laskavost a příspěvek!",
-        "  * Ještě jednou děkuji za vaši důvěru a přeji vám příjemné používání aplikace!"
+        "  * Vaše podpora mi pomůže zlepšovat zkratku a přinášet nové funkce a aktualizace. Předem děkuji za vaši laskavost a příspěvek!",
+        "  * Ještě jednou děkuji za vaši důvěru a přeji vám příjemné používání zkratky!"
       ]
     }
   },
