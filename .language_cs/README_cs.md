@@ -20,7 +20,7 @@ Zkratka slouží k extrahování stránek z pdf a uložit je jako samostatné no
 
 
 ### Ke stažení
-[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/d7bee22a781b441f9bacfcf917ee95a3)
+[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/ad56cf0df3a4477ebe748ff61f10b8c9)
 
 ### Instalace
 Stačí otevřít odkaz v iPhone.

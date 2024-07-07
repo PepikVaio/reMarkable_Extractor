@@ -20,7 +20,7 @@ The shortcut is used to extract pages from a pdf and save them as a separate new
 
 
 ### Downloads
-[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/d7bee22a781b441f9bacfcf917ee95a3)
+[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/ad56cf0df3a4477ebe748ff61f10b8c9)
 
 
 ### Installation
