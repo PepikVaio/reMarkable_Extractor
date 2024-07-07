@@ -133,6 +133,10 @@
     "start_Title": "┃*** ",
     "end_Title": "! ***",
     "icon_Back": "❮ ",
+      
+    "image_Images": "image_Images.txt",
+    "image_Settings": "image_Settings.txt",
+    "image_Text": "image_Text.txt",
 
     "lang_en": {
       "title": "Select extraction style!",
