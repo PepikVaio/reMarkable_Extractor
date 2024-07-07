@@ -134,7 +134,7 @@
     "end_Title": "! ***",
     "icon_Back": "❮ ",
       
-    "image_Images": "image_Images.txt",
+    "image_Images": "https://raw.githubusercontent.com/PepikVaio/reMarkable_Extractor/main/image_Images.txt",
     "image_Settings": "image_Settings.txt",
     "image_Text": "image_Text.txt",
 
