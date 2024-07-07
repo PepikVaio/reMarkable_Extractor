@@ -29,7 +29,7 @@ Just open the link on your iPhone.
 ### Usage
 Open the reMarkable app on your iPhone, share the file for which you want to extract pages and follow the instructions.
 
-[![YouTube](https://img.shields.io/badge/video-YouTube-red)]()
+[![YouTube](https://img.shields.io/badge/video-YouTube-red)](https://youtu.be/DR70zW_UP2w)
 
 ## Help
 Create issues if you find a problem.

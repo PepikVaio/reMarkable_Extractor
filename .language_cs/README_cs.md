@@ -32,7 +32,7 @@ Otevřete aplikaci reMarkable v iPhone, sdílejte soubor, u kterého chcete extr
 ## Pomoc
 Vytvořte problémy, pokud najdete problém.
 
-[![YouTube](https://img.shields.io/badge/video-YouTube-red)]()
+[![YouTube](https://img.shields.io/badge/video-YouTube-red)](https://youtu.be/DR70zW_UP2w)
 
 ## Historie verzí
 1.0
