@@ -6,6 +6,7 @@
 
 # Extractor!
 Create your own *pdf like magic.
+* No hack.
 
 ## Description
 The shortcut is used to extract pages from a pdf and save them as a separate new *pdf.

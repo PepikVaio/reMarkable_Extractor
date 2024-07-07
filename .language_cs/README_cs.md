@@ -6,6 +6,7 @@
 
 # Extractor!
 Vytvořte si vlastní *pdf jako kouzlo.
+* Není potřeba žádný hack.
 
 ## Popis
 Zkratka slouží k extrahování stránek z pdf a uložit je jako samostatné nové *pdf.
