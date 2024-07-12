@@ -38,7 +38,7 @@ Vytvořte problémy, pokud najdete problém.
 ## Historie verzí
 1.1
 * Uzavírá - Dictionary #3
- * Drobné ladění kódu
+  * Drobné ladění kódu
 * Uzavírá - Open in another app #4
    * Možnost otevřít výsledek v jiné aplikaci
 * Uzavírá - Readme - Requirements #6
