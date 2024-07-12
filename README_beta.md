@@ -38,13 +38,13 @@ Create issues if you find a problem.
 ## Version history
 1.1
 * Closes - Dictionary #3
-   * Minor code debugging
+  * Minor code debugging
 * Closes - Open in another application #4
-   * Option to open the result in another application
+  * Option to open the result in another application
 * Closes - Readme - Requirements #6
-   * Change text in 'README.md' on 'Github.com'
+  * Change text in 'README.md' on 'Github.com'
 * Change the name of the variable 'action_Value' to 'set_Action_Value'
-   * Minor code debugging
+  * Minor code debugging
 
 1.0
 * first release
