@@ -36,6 +36,16 @@ Vytvořte problémy, pokud najdete problém.
 [![YouTube](https://img.shields.io/badge/video-YouTube-red)](https://youtu.be/DR70zW_UP2w)
 
 ## Historie verzí
+1.1
+* Uzavírá - Dictionary #3
+** Drobné ladění kódu
+* Uzavírá - Open in another app #4
+** Možnost otevřít výsledek v jiné aplikaci
+* Uzavírá - Readme - Requirements #6
+** Změna textu v 'README.md' na 'Github.com'
+* Změna názvu proměnné 'action_Value' na 'set_Action_Value'
+** Drobné ladění kódu
+
 1.0
 * první vydání
 
