@@ -17,7 +17,7 @@ Zkratka slouží k extrahování stránek z pdf a uložit je jako samostatné no
 
 ### Požadavky
 * iPhone
-* [aplikace reMarkable](https://apps.apple.com/cz/app/remarkable-mobile/id1274957816?l=cs)
+* [aplikace reMarkable (volitelně)](https://apps.apple.com/cz/app/remarkable-mobile/id1274957816?l=cs)
 
 
 ### Ke stažení

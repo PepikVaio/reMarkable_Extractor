@@ -17,7 +17,7 @@ The shortcut is used to extract pages from a pdf and save them as a separate new
 
 ### Requirements
 * iPhone
-* [reMarkable application](https://apps.apple.com/cz/app/remarkable-mobile/id1274957816?l=cs)
+* [reMarkable application (optional)](https://apps.apple.com/cz/app/remarkable-mobile/id1274957816?l=cs)
 
 
 ### Downloads
