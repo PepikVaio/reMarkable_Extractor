@@ -1,0 +1,210 @@
+{
+  "info": {
+    "title": "Extractor!",
+    "version": "1.0",
+    "developer": "@Wajsar_Josef",
+    "github_path": "https://github.com/PepikVaio/reMarkable_Extractor...",
+    "email": "Wajsar.Josef@hotmail.com",
+
+    "lang_en": {
+      "welcome": [
+        "┃*** Welcome to Apple Shortcuts! ***",
+        "┃Create your own *pdf like magic"
+      ],
+      "title": "Name:",
+      "version": "Version:",
+      "developer": "Developer:",
+      "description": [
+        "*** Description: ***",
+        "-------------------",
+        "  * Create *pdf on your reMarkable.",
+        "  * Create *text on your reMarkable."
+      ]
+    },
+    
+    "lang_cs": {
+      "welcome": [
+        "┃*** Vitejte v Apple Shortcuts! ***",
+        "┃Vytvořte si vlastní *pdf jako kouzlo"
+      ],
+      "title": "Název:",
+      "version": "Verze:",
+      "developer": "Vývojář:",
+      "description": [
+        "*** Popis: ***",
+        "-------------",
+        "  * Vytvářejte *pdf na svém reMarkable.",
+        "  * Vytvářejte *text na svém reMarkable."
+      ]
+    }
+  },
+
+  "release": {
+
+    "lang_en": {
+      "title_01": [
+        "┃*** New Update! ***",
+        "┃A new version is available."
+      ],
+      "content": [
+        "",
+        "Please update before continuing.",
+        "You will be redirected to the Github page to download the new version."
+      ],
+      "title_02": [
+        "┃*** Update installed! ***",
+        "┃Great, you have the latest version."
+      ],
+      "news": [
+        "",
+        "*** News in version: ***",
+        "------------------------",
+        "  * First release"
+      ]
+    },
+
+    "lang_cs": {
+      "title_01": [
+        "┃*** Nová aktualizace! ***",
+        "┃K dispozici je nová verze"
+      ],
+      "content": [
+        "",
+        "Před pokračováním prosím aktualizujte.",
+        "Budete přesměrováni na stránku Github pro stažení nové verze."
+      ],
+      "title_02": [
+        "┃*** Aktualizace nainstalovaná! ***",
+        "┃Skvělé, máte aktuální verzi"
+      ],
+      "news": [
+        "",
+        "*** Novinky ve verzi: ***",
+        "------------------------",
+        "  * První vydání"
+      ]
+    }
+  },
+
+  "thank_you": {
+
+    "lang_en": {
+      "title": "┃*** Thank you for downloading! ***",
+      "content": [
+        "",
+        "Dear user, thank you for downloading my shortcut. I hope it will be useful to you and brighten your day. If you have any questions or feedback, please feel free to contact me.",
+        "",
+        "*** Voluntary Contributions! ***",
+        "--------------------------------",
+        "  * My shortcut is completely free and all its features are available at no cost. However, if you would like to support further development and appreciate my work, you can make a voluntary contribution.",
+        "",
+        "  * All information can be found in the 'About Shortcuts' section in 'Settings'."
+      ],
+      "payment": [
+        "*** If you decide to contribute! ***",
+        "----------------------------------",
+        "Account number: 1358053048/3030",
+        "Message: [name appleshortcuts]",
+        "",
+        "  * Your support will help me improve the app and bring new features."
+      ]
+    },
+
+    "lang_cs": {
+      "title": "┃*** Děkuji za stažení! ***",
+      "content": [
+        "",
+        "Vážený uživateli, děkuji, že jste si stáhl moji zkratku. Doufám, že vám bude přinášet užitek a zpříjemní vám váš den. Pokud budete mít jakékoli dotazy nebo připomínky, neváhejte mě kontaktovat.",
+        "",
+        "*** Dobrovolné příspěvky! ***",
+        "------------------------------",
+        "  * Moje zkratka je zcela zdarma a veškeré její funkce jsou dostupné bez jakýchkoli poplatků. Pokud však chcete podpořit další vývoj a ocenit moji práci, můžete přispět dobrovolným příspěvkem.",
+        "",
+        "  * Veškeré info najdete v části 'O zkratce' v 'Nastavení'."
+      ],
+      "payment": [
+        "*** Pokud se rozhodnete přispět! ***",
+        "-------------------------------------",
+        "Číslo účtu: 1358053048/3030",
+        "Zpráva: [název zkratky]",
+        "",
+        "  * Vaše podpora mi pomůže zlepšovat zkratku a přinášet nové funkce."
+      ]
+    }
+  },
+
+  "menu": {
+    "start_Title": "┃*** ",
+    "end_Title": "! ***",
+    "icon_Back": "❮ ",
+      
+    "lang_en": {
+      "title": "Select extraction style!",
+      "page": "Page",
+
+      "01": {
+        "title": "Extract as text",
+        "content": "Plain text is extracted, without images ..."
+      },
+      "02": {
+        "title": "Extract as images",
+        "content": "The appearance of the pdf will not change, the images will be preserved ..."
+      },
+      "03": {
+        "title": "Settings",
+        "content": "About, Send feedback, Reset settings ...",
+        "label_01": "About",
+        "label_02": "Send feedback",
+        "label_03": "Switch language to Czech",
+        "label_04": "Reset settings",
+        "label_05": "Back",
+        "content_02_01": "Device:",
+        "content_02_02": "System version:",
+        "content_02_03": [
+          "",
+          "Thank you for sending email.",
+          "I will try to reply as soon as possible.",
+          ""
+        ]
+      }
+    },
+
+    "lang_cs": {
+      "title": "Vyberte styl extrakce!",
+      "page": "strana",
+
+      "01": {
+        "title": "Extrahovat jako text",
+        "content": "Vyextrahuje se prostý text, bez obrázků ..."
+      },
+      "02": {
+        "title": "Extrahovat jako obrázky",
+        "content": "Vzhled pdf se nezmění, obrázky budou zachované ..."
+      },
+      "03": {
+        "title": "Nastavení",
+        "content": "O zkratce, Poslat zpětnou vazbu, Resetovat nastavení ...",
+        "label_01": "O zkratce",
+        "label_02": "Poslat zpětnou vazbu",
+        "label_03": "Přepnout jazyk na Angličtinu",
+        "label_04": "Resetovat nastavení",
+        "label_05": "Zpět",
+        "content_02_01": "Zařízení:",
+        "content_02_02": "Verze systému:",
+        "content_02_03": [
+          "",
+          "Děkuji za zaslání emailu.",
+          "Pokusím se odpovědět co nejdříve.",
+          ""
+        ]
+      }
+    }
+  },
+
+  "replaces": {
+    "dot": ".\n\n  ",
+    "exclamation_mark": "!\n\n  ",
+    "question_mark": "?\n\n  ",
+    "line_break": "\n"
+  }
+}
