@@ -38,7 +38,7 @@ Create issues if you find a problem.
 ## Version history
 1.1
 * Closes - Dictionary #3
-** Minor code debugging
+  ** Minor code debugging
 * Closes - Open in another application #4
 ** Option to open the result in another application
 * Closes - Readme - Requirements #6
