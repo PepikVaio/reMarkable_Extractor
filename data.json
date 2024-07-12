@@ -59,7 +59,14 @@
         "",
         "*** News in version: ***",
         "------------------------",
-        "  * First release"
+        "  * Closes #3",
+        "  ** Minor code debugging",
+        "  * Closes #4",
+        "  ** Option to open in another application",
+        "  * Closes #6",
+        "  ** Change text in 'README.md'",
+        "  * Change the name of the variable",
+        "  ** Minor code debugging"
       ]
     },
 
@@ -81,7 +88,14 @@
         "",
         "*** Novinky ve verzi: ***",
         "------------------------",
-        "  * První vydání"
+        "  * Uzavírá - #3",
+        "  ** Drobné ladění kódu",
+        "  * Uzavírá - #4",
+        "  ** Možnost otevřít v jiné aplikaci",
+        "  * Uzavírá - #6",
+        "  ** Změna textu v 'README.md'",
+        "  * Změna názvu proměnné",
+        "  ** Drobné ladění kódu"
       ]
     }
   },
@@ -156,8 +170,10 @@
         "label_01": "About",
         "label_02": "Send feedback",
         "label_03": "Switch language to Czech",
-        "label_04": "Reset settings",
-        "label_05": "Back",
+        "label_04_01": "Opening with other apps",
+        "label_04_02": "Opening with the reMarkable app",
+        "label_05": "Reset settings",
+        "label_06": "Back",
         "content_02_01": "Device:",
         "content_02_02": "System version:",
         "content_02_03": [
@@ -187,8 +203,10 @@
         "label_01": "O zkratce",
         "label_02": "Poslat zpětnou vazbu",
         "label_03": "Přepnout jazyk na Angličtinu",
-        "label_04": "Resetovat nastavení",
-        "label_05": "Zpět",
+        "label_04_01": "Otevírání pomocí jiných aplikací",
+        "label_04_02": "Otevírání pomocí reMarkable aplikace",
+        "label_05": "Resetovat nastavení",
+        "label_06": "Zpět",
         "content_02_01": "Zařízení:",
         "content_02_02": "Verze systému:",
         "content_02_03": [

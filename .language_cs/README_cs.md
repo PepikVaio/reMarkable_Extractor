@@ -15,13 +15,13 @@ Zkratka slouží k extrahování stránek z pdf a uložit je jako samostatné no
 
 ## Začínáme
 
-### Závislosti
+### Požadavky
 * iPhone
 * [aplikace reMarkable](https://apps.apple.com/cz/app/remarkable-mobile/id1274957816?l=cs)
 
 
 ### Ke stažení
-[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/ad56cf0df3a4477ebe748ff61f10b8c9)
+[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/56dbcf353cde428e8f02f76df6404465)
 
 ### Instalace
 Stačí otevřít odkaz v iPhone.
@@ -36,6 +36,16 @@ Vytvořte problémy, pokud najdete problém.
 [![YouTube](https://img.shields.io/badge/video-YouTube-red)](https://youtu.be/DR70zW_UP2w)
 
 ## Historie verzí
+1.1
+* Uzavírá - Dictionary #3
+  * Drobné ladění kódu
+* Uzavírá - Open in another app #4
+  * Možnost otevřít výsledek v jiné aplikaci
+* Uzavírá - Readme - Requirements #6
+  * Změna textu v 'README.md' na 'Github.com'
+* Změna názvu proměnné 'action_Value' na 'set_Action_Value'
+  * Drobné ladění kódu
+
 1.0
 * první vydání
 
