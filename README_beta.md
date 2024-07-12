@@ -21,7 +21,7 @@ The shortcut is used to extract pages from a pdf and save them as a separate new
 
 
 ### Downloads
-[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/ad56cf0df3a4477ebe748ff61f10b8c9)
+[![download](https://img.shields.io/badge/download-latest_release-slategray)](https://www.icloud.com/shortcuts/56dbcf353cde428e8f02f76df6404465)
 
 
 ### Installation
