@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Název složky, která začíná na eaf3f838 (nepovinný)
-folder_prefix="eaf3f838"
+folder_prefix=""
 
 # Vzdálený server a cesta
 server="root@10.0.1.24"
-remote_path="/home/root/.local/share/remarkable/xochitl"
+remote_path="/home/root/.local/share/remarkable/xochitl/"
 
 # Funkce pro nalezení nejnovějšího souboru
 find_latest_file() {
