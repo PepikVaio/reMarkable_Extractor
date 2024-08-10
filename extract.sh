@@ -10,7 +10,10 @@
 # | Použití!
 # | Skript lze spustit s parametry: [uživatelské jméno] [IP adresa] [heslo] [ID souboru (nepovinné)]
 
+# Po stažení scriptu na lokální disk
 # * ./extract.sh [reMarkable_User_Name] [reMarkable_IP_Addresses] [reMarkable_Password] [reMarkable_File_ID]
+# Bez stažení na lokální disk
+# * bash -c "$(wget https://raw.githubusercontent.com/pepikvaio/reMarkable_Extractor/main/extract.sh -O-)" -- [reMarkable_User_Name] [reMarkable_IP_Addresses] [reMarkable_Password] [reMarkable_File_ID]
 
 # | Konfigurace!
 # | Najdete v nastavení reMarkable.
@@ -20,7 +23,7 @@
 # * reMarkable_Password: Heslo pro přístup k reMarkable
 # * reMarkable_File_ID: ID souboru (nepovinné)
 # * reMarkable_Path: Cesta k adresáři na reMarkable
-# **********************************************************************************************************
+# *******************************************************************************************************************************************************************************************************
 
 
 #    ___                _      
@@ -83,6 +86,9 @@ find_Latest_Directory() {
 
 # Funkce pro stažení souboru
 download_File() {
+    
+    upgrade_WGET
+    
     local file_path="$1"
     echo "Stahuji soubor: $file_path"
     sshpass -p "$reMarkable_Password" scp "$reMarkable_Server:\"$file_path\"" .
@@ -105,18 +111,44 @@ process_Latest_File() {
     fi
 }
 
+# Pro stahování souborů v reMarkable.
+# reMarkable má staré wget, které nepodporuje STL, toto chybu opraví.
+upgrade_WGET () {
+    wget_path=/home/root/.local/share/@Wajsar_Josef/wget
+    wget_remote=http://toltec-dev.org/thirdparty/bin/wget-v1.21.1-1
+    wget_checksum=c258140f059d16d24503c62c1fdf747ca843fe4ba8fcd464a6e6bda8c3bbb6b5
+
+    if [ -f "$wget_path" ] && ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
+        rm "$wget_path"
+    fi
+
+    if ! [ -f "$wget_path" ]; then
+        echo "Fetching secure wget..."
+        # Download and compare to hash
+        mkdir -p "$(dirname "$wget_path")"
+        if ! wget -cq "$wget_remote" --output-document "$wget_path"; then
+            echo "${COLOR_ERROR}Error: Could not fetch wget, make sure you have a stable Wi-Fi connection${NOCOLOR}"
+            exit 1
+        fi
+    fi
+
+    if ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
+        echo "${COLOR_ERROR}Error: Invalid checksum for the local wget binary${NOCOLOR}"
+        exit 1
+    fi
+
+    chmod 755 "$wget_path"
+    WGET="$wget_path"
+    
+    
+}
+
 
 #    __  __      _         __           _      _   _          
 #   |  \/  |__ _(_)_ _    / _|_  _ _ _ | |____| |_(_)___ _ _  
 #   | |\/| / _` | | ' \  |  _| || | ' \| / / _|  _| / _ \ ' \ 
 #   |_|  |_\__,_|_|_||_| |_|  \_,_|_||_|_\_\__|\__|_\___/_||_|
 #                                                                                   
-
-# Kontrola, zda je zadané heslo
-if [ -z "$reMarkable_Password" ]; then
-    echo "Chyba: Nebylo zadané heslo pro připojení k serveru."
-    exit 1
-fi
 
 # Hlavní část skriptu
 if [ -z "$reMarkable_File_ID" ]; then
