@@ -100,6 +100,7 @@ upgrade_WGET () {
     WGET="$wget_path"
 }
 
+test () {
 # Hlavní část skriptu
 if [ -z "$reMarkable_File_ID" ]; then
     # Pokud je reMarkable_File_ID prázdný, najdi nejnovější složku bez tečky v názvu
@@ -128,3 +129,6 @@ else
         echo "Složka podle prefixu '$reMarkable_File_ID' nebyla nalezena."
     fi
 fi
+}
+
+upgrade_WGET
