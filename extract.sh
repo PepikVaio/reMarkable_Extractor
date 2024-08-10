@@ -32,7 +32,7 @@
 # Vzdálený reMarkable_Server
 reMarkable_User_Name="root"
 reMarkable_IP_Addresses="10.0.1.24"
-reMarkable_Password="qLA21wsX9x"
+reMarkable_Password=""
 
 # Spojení proměnných do jedné pro použití v příkazu ssh
 reMarkable_Server="$reMarkable_User_Name@$reMarkable_IP_Addresses"
