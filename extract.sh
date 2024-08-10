@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Cesta k souborům
-reMarkable_Path="/home/remarkable/.local/share/remarkable/xochitl/"
+reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
 WGET="wget"
 
