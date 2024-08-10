@@ -49,8 +49,10 @@ find_Latest_Directory() {
 # Funkce pro stažení souboru
 download_File() {
     local file_path="$1"
-    echo "Stahuji soubor: $file_path"
-    scp "$file_path" .
+    local destination_directory="$2"
+    echo "Stahuji soubor: $file_path do adresáře: $destination_directory"
+    scp "$file_path" "$destination_directory"
+    echo "Stažený soubor by měl být v: $destination_directory"
 }
 
 # Funkce pro zpracování nalezeného souboru
