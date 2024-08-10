@@ -104,6 +104,7 @@ upgrade_WGET () {
     WGET="$wget_path"
 }
 
+test {
 # Hlavní část skriptu
 echo "Skript začíná..."
 if [ -z "$reMarkable_File_ID" ]; then
@@ -138,3 +139,6 @@ else
     fi
 fi
 echo "Skript končí..."
+}
+
+upgrade_WGET
