@@ -22,10 +22,8 @@
 # * reMarkable_Path: Cesta k adresáři na reMarkable
 # *******************************************************************************************************************************************************************************************************
 
+# Parametry
 reMarkable_File_ID="${1:-}"  # Pokud první parametr není zadán, použije prázdný řetězec
-
-# Spojení proměnné IP adresy do příkazu ssh
-reMarkable_Server="remarkable"
 
 # Cesta k souborům
 reMarkable_Path="/home/remarkable/.local/share/remarkable/xochitl/"
@@ -34,32 +32,25 @@ reMarkable_Path="/home/remarkable/.local/share/remarkable/xochitl/"
 find_Latest_File() {
     local search_path="$1"
     local search_pattern="$2"
-    ssh "$reMarkable_Server" "
-        find \"$search_path\" -type f -name '$search_pattern' -print | while read file; do
-            echo \"\$(stat -c '%Y' \"\$file\") \$file\"
-        done | sort -n | tail -1 | awk '{print \$2}'
-    "
+    find "$search_path" -type f -name "$search_pattern" -print | while read -r file; do
+        echo "$(stat -c '%Y' "$file") $file"
+    done | sort -n | tail -1 | awk '{print $2}'
 }
 
 # Funkce pro nalezení nejnovější složky bez tečky na konci
 find_Latest_Directory() {
     local search_path="$1"
     local search_pattern="$2"
-    ssh "$reMarkable_Server" "
-        find \"$search_path\" -maxdepth 1 -type d -name '$search_pattern' ! -name '*.*' ! -name 'xochitl' -print | while read dir; do
-            echo \"\$(stat -c '%Y' \"\$dir\") \$dir\"
-        done | sort -n | tail -1 | awk '{print \$2}'
-    "
+    find "$search_path" -maxdepth 1 -type d -name "$search_pattern" ! -name '*.*' ! -name 'xochitl' -print | while read -r dir; do
+        echo "$(stat -c '%Y' "$dir") $dir"
+    done | sort -n | tail -1 | awk '{print $2}'
 }
 
 # Funkce pro stažení souboru
 download_File() {
-    
-    upgrade_WGET
-    
     local file_path="$1"
     echo "Stahuji soubor: $file_path"
-    scp "$reMarkable_Server:\"$file_path\"" .
+    scp "$file_path" .
 }
 
 # Funkce pro zpracování nalezeného souboru
