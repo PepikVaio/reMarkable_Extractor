@@ -22,11 +22,6 @@
 # * reMarkable_Path: Cesta k adresáři na reMarkable
 # *******************************************************************************************************************************************************************************************************
 
-if [ "$#" -gt 1 ]; then
-    echo "Chyba: Použití: ./extract.sh [ID souboru (nepovinné)]"
-    exit 1
-fi
-
 reMarkable_File_ID="${1:-}"  # Pokud první parametr není zadán, použije prázdný řetězec
 
 # Spojení proměnné IP adresy do příkazu ssh
