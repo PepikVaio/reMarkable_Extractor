@@ -26,7 +26,7 @@
 reMarkable_File_ID="${1:-}"  # Pokud první parametr není zadán, použije prázdný řetězec
 
 # Cesta k souborům
-reMarkable_Path="/home/remarkable/.local/share/remarkable/xochitl/"
+reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
 # Funkce pro nalezení nejnovějšího souboru
 find_Latest_File() {
