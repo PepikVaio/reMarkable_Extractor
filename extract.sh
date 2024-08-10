@@ -32,6 +32,7 @@ reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 find_Latest_File() {
     local search_path="$1"
     local search_pattern="$2"
+    echo "Hledám nejnovější soubor v: $search_path s vzorem: $search_pattern"
     find "$search_path" -type f -name "$search_pattern" -print | while read -r file; do
         echo "$(stat -c '%Y' "$file") $file"
     done | sort -n | tail -1 | awk '{print $2}'
@@ -41,6 +42,7 @@ find_Latest_File() {
 find_Latest_Directory() {
     local search_path="$1"
     local search_pattern="$2"
+    echo "Hledám nejnovější složku v: $search_path s vzorem: $search_pattern"
     find "$search_path" -maxdepth 1 -type d -name "$search_pattern" ! -name '*.*' ! -name 'xochitl' -print | while read -r dir; do
         echo "$(stat -c '%Y' "$dir") $dir"
     done | sort -n | tail -1 | awk '{print $2}'
@@ -66,7 +68,7 @@ process_Latest_File() {
         echo "Nejnověji upravený soubor: $file_name"
 
         # Volání funkce pro stažení souboru
-        download_File "$latest_file"
+        download_File "$latest_file" .
     else
         echo "Ve složce '$latest_directory' nejsou žádné soubory."
     fi
@@ -75,7 +77,7 @@ process_Latest_File() {
 # Pro stahování souborů v reMarkable.
 # reMarkable má staré wget, které nepodporuje STL, toto chybu opraví.
 upgrade_WGET () {
-    wget_path=/home/root/.local/share/@Wajsar_Josef/wget
+    wget_path=/home/root/.local/share/rm-hacks/wget
     wget_remote=http://toltec-dev.org/thirdparty/bin/wget-v1.21.1-1
     wget_checksum=c258140f059d16d24503c62c1fdf747ca843fe4ba8fcd464a6e6bda8c3bbb6b5
 
@@ -88,13 +90,13 @@ upgrade_WGET () {
         # Download and compare to hash
         mkdir -p "$(dirname "$wget_path")"
         if ! wget -cq "$wget_remote" --output-document "$wget_path"; then
-            echo "Error: Could not fetch wget, make sure you have a stable Wi-Fi connection"
+            echo "${COLOR_ERROR}Error: Could not fetch wget, make sure you have a stable Wi-Fi connection${NOCOLOR}"
             exit 1
         fi
     fi
 
     if ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
-        echo "Error: Invalid checksum for the local wget binary"
+        echo "${COLOR_ERROR}Error: Invalid checksum for the local wget binary${NOCOLOR}"
         exit 1
     fi
 
@@ -103,13 +105,16 @@ upgrade_WGET () {
 }
 
 # Hlavní část skriptu
+echo "Skript začíná..."
 if [ -z "$reMarkable_File_ID" ]; then
     # Pokud je reMarkable_File_ID prázdný, najdi nejnovější složku bez tečky v názvu
     latest_directory=$(find_Latest_Directory "$reMarkable_Path" "*")
+    echo "Nalezená složka: $latest_directory"
 
     if [ -n "$latest_directory" ] && [ "$latest_directory" != "$reMarkable_Path" ]; then
         # Nalezení nejnovějšího souboru v nalezené složce
         latest_file=$(find_Latest_File "$latest_directory" "*")
+        echo "Nalezený soubor: $latest_file"
 
         # Volání funkce pro zpracování nalezeného souboru
         process_Latest_File "$latest_file" "$latest_directory"
@@ -119,10 +124,12 @@ if [ -z "$reMarkable_File_ID" ]; then
 else
     # Pokud je reMarkable_File_ID neprázdný, vyhledej složku podle prefixu
     latest_directory=$(find_Latest_Directory "$reMarkable_Path" "${reMarkable_File_ID}*")
+    echo "Nalezená složka podle ID: $latest_directory"
 
     if [ -n "$latest_directory" ]; then
         # Nalezení nejnovějšího souboru v nalezené složce
         latest_file=$(find_Latest_File "$latest_directory" "*")
+        echo "Nalezený soubor podle ID: $latest_file"
 
         # Volání funkce pro zpracování nalezeného souboru
         process_Latest_File "$latest_file" "$latest_directory"
@@ -130,3 +137,4 @@ else
         echo "Složka podle prefixu '$reMarkable_File_ID' nebyla nalezena."
     fi
 fi
+echo "Skript končí..."
