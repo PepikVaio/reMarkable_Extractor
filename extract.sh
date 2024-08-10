@@ -3,6 +3,9 @@
 # Cesta k souborům
 reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
+# Definuj proměnné
+reMarkable_File_ID="${1:-}"  # Pokud je první argument prázdný, použije prázdný řetězec
+
 WGET="wget"
 
 # Pro stahování souborů v reMarkable.
