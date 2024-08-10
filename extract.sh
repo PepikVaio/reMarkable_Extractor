@@ -3,7 +3,7 @@
 WGET="wget"
 
 upgrade_WGET () {
-    wget_path=/home/root/.local/share/rm-hacks/wget
+    wget_path=/home/root/.local/share/@Wajsar_Josef/wget
     wget_remote=http://toltec-dev.org/thirdparty/bin/wget-v1.21.1-1
     wget_checksum=c258140f059d16d24503c62c1fdf747ca843fe4ba8fcd464a6e6bda8c3bbb6b5
 
