@@ -44,11 +44,11 @@ reMarkable_File_ID=""
 reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
 
-#    ___             _   _          
-#   | __|  _ _ _  __| |_(_)___ _ _  
-#   | _| || | ' \/ _|  _| / _ \ ' \ 
-#   |_| \_,_|_||_\__|\__|_\___/_||_|
-#                                   
+#    ___          _      _   _             
+#   | __|  _ _ _ | |____| |_(_)___ _ _  ___
+#   | _| || | ' \| / / _|  _| / _ \ ' \(_-<
+#   |_| \_,_|_||_|_\_\__|\__|_\___/_||_/__/
+#                                                                          
 
 # Funkce pro nalezení nejnovějšího souboru
 find_Latest_File() {
