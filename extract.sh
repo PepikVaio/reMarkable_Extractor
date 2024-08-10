@@ -5,7 +5,6 @@ reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
 WGET="wget"
 
-
 # Pro stahování souborů v reMarkable.
 # reMarkable má staré wget, které nepodporuje STL, toto chybu opraví.
 upgrade_WGET () {
@@ -77,15 +76,6 @@ process_Latest_File() {
         echo "Ve složce '$latest_directory' nejsou žádné soubory."
     fi
 }
-
-
-
-
-
-
-
-
-
 
 upgrade_WGET
 
