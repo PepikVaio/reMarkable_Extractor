@@ -8,10 +8,9 @@
 # * Skript využívá nástroj sshpass pro autentizaci a scp pro stahování souborů.
 
 # | Použití!
-# | Skript lze spustit bez parametrů.
+# | Skript lze spustit s parametry: [uživatelské jméno] [IP adresa] [heslo] [ID souboru (nepovinné)]
 
-# * Pokud je zadané ID souboru, bude hledat složku začínající tímto ID a stáhne nejnovější soubor.
-# * Jinak hledá nejnovější soubor ve složkách bez tečky v názvu.
+# * ./extract.sh [reMarkable_User_Name] [reMarkable_IP_Addresses] [reMarkable_Password] [reMarkable_File_ID]
 
 # | Konfigurace!
 # | Najdete v nastavení reMarkable.
@@ -21,7 +20,20 @@
 # * reMarkable_Password: Heslo pro přístup k reMarkable
 # * reMarkable_File_ID: ID souboru (nepovinné)
 # * reMarkable_Path: Cesta k adresáři na reMarkable
-# ************************************************************************************************
+# **********************************************************************************************************
+
+
+#    ___                _      
+#   |_ _|_ _  _ __ _  _| |_ ___
+#    | || ' \| '_ \ || |  _(_-<
+#   |___|_||_| .__/\_,_|\__/__/
+#            |_|               
+
+if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
+    echo "Chyba: Požadovány 3 nebo 4 parametry: uživatelské jméno, IP adresa, heslo, [ID souboru (nepovinné)]."
+    exit 1
+fi
+
 
 #    ___      _   _   _                              __  __          _        _    _     
 #   / __| ___| |_| |_(_)_ _  __ _ ___  ___   _ _ ___|  \/  |__ _ _ _| |____ _| |__| |___ 
@@ -29,20 +41,17 @@
 #   |___/\___|\__|\__|_|_||_\__, /__/       |_| \___|_|  |_\__,_|_| |_\_\__,_|_.__/_\___|
 #                           |___/                                                        
 
-# Vzdálený reMarkable_Server
-reMarkable_User_Name="root"
-reMarkable_IP_Addresses="10.0.1.24"
-reMarkable_Password=""
+# reMarkable server
+reMarkable_User_Name="$1"
+reMarkable_IP_Addresses="$2"
+reMarkable_Password="$3"
+reMarkable_File_ID="${4:-}"  # Pokud čtvrtý parametr není zadán, použije prázdný řetězec
 
 # Spojení proměnných do jedné pro použití v příkazu ssh
 reMarkable_Server="$reMarkable_User_Name@$reMarkable_IP_Addresses"
 
-# ID souboru, například eaf3f838 (nepovinný)
-reMarkable_File_ID=""
-
 # Cesta k souborům
-reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
-
+reMarkable_Path="/home/$reMarkable_User_Name/.local/share/remarkable/xochitl/"
 
 #    ___          _      _   _             
 #   | __|  _ _ _ | |____| |_(_)___ _ _  ___
@@ -134,6 +143,6 @@ else
         # Volání funkce pro zpracování nalezeného souboru
         process_Latest_File "$latest_file" "$latest_directory"
     else
-        echo "Složka nebyla nalezena."
+        echo "Složka podle prefixu '$reMarkable_File_ID' nebyla nalezena."
     fi
 fi
