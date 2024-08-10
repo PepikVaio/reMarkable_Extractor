@@ -5,68 +5,41 @@
 # 
 # * Vyhledává nejnovější soubory a složky na základě zadaných kritérií.
 # * Stahuje je do lokálního adresáře.
-# * Skript využívá nástroj sshpass pro autentizaci a scp pro stahování souborů.
+# * Skript využívá nástroj scp pro stahování souborů.
 
 # | Použití!
-# | Skript lze spustit s parametry: [uživatelské jméno] [IP adresa] [heslo] [ID souboru (nepovinné)]
+# | Skript lze spustit s parametry: [ID souboru (nepovinné)]
 
 # Po stažení scriptu na lokální disk
-# * ./extract.sh [reMarkable_User_Name] [reMarkable_IP_Addresses] [reMarkable_Password] [reMarkable_File_ID]
+# * ./extract.sh [ID souboru (nepovinné)]
 # Bez stažení na lokální disk
-# * bash -c "$(wget https://raw.githubusercontent.com/pepikvaio/reMarkable_Extractor/main/extract.sh -O-)" -- [reMarkable_User_Name] [reMarkable_IP_Addresses] [reMarkable_Password] [reMarkable_File_ID]
+# * bash -c "$(wget https://raw.githubusercontent.com/pepikvaio/reMarkable_Extractor/main/extract.sh -O-)" -- [ID souboru (nepovinné)]
 
 # | Konfigurace!
 # | Najdete v nastavení reMarkable.
 
-# * reMarkable_User_Name: Uživatelské jméno pro přístup k reMarkable
-# * reMarkable_IP_Addresses: IP adresa reMarkable
-# * reMarkable_Password: Heslo pro přístup k reMarkable
 # * reMarkable_File_ID: ID souboru (nepovinné)
 # * reMarkable_Path: Cesta k adresáři na reMarkable
 # *******************************************************************************************************************************************************************************************************
 
-
-#    ___                _      
-#   |_ _|_ _  _ __ _  _| |_ ___
-#    | || ' \| '_ \ || |  _(_-<
-#   |___|_||_| .__/\_,_|\__/__/
-#            |_|               
-
-if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
-    echo "Chyba: Požadovány 3 nebo 4 parametry: uživatelské jméno, IP adresa, heslo, [ID souboru (nepovinné)]."
+if [ "$#" -gt 1 ]; then
+    echo "Chyba: Použití: ./extract.sh [ID souboru (nepovinné)]"
     exit 1
 fi
 
+reMarkable_File_ID="${1:-}"  # Pokud první parametr není zadán, použije prázdný řetězec
 
-#    ___      _   _   _                              __  __          _        _    _     
-#   / __| ___| |_| |_(_)_ _  __ _ ___  ___   _ _ ___|  \/  |__ _ _ _| |____ _| |__| |___ 
-#   \__ \/ -_)  _|  _| | ' \/ _` (_-< |___| | '_/ -_) |\/| / _` | '_| / / _` | '_ \ / -_)
-#   |___/\___|\__|\__|_|_||_\__, /__/       |_| \___|_|  |_\__,_|_| |_\_\__,_|_.__/_\___|
-#                           |___/                                                        
-
-# reMarkable server
-reMarkable_User_Name="$1"
-reMarkable_IP_Addresses="$2"
-reMarkable_Password="$3"
-reMarkable_File_ID="${4:-}"  # Pokud čtvrtý parametr není zadán, použije prázdný řetězec
-
-# Spojení proměnných do jedné pro použití v příkazu ssh
-reMarkable_Server="$reMarkable_User_Name@$reMarkable_IP_Addresses"
+# Spojení proměnné IP adresy do příkazu ssh
+reMarkable_Server="remarkable"
 
 # Cesta k souborům
-reMarkable_Path="/home/$reMarkable_User_Name/.local/share/remarkable/xochitl/"
-
-#    ___          _      _   _             
-#   | __|  _ _ _ | |____| |_(_)___ _ _  ___
-#   | _| || | ' \| / / _|  _| / _ \ ' \(_-<
-#   |_| \_,_|_||_|_\_\__|\__|_\___/_||_/__/
-#                                                                          
+reMarkable_Path="/home/remarkable/.local/share/remarkable/xochitl/"
 
 # Funkce pro nalezení nejnovějšího souboru
 find_Latest_File() {
     local search_path="$1"
     local search_pattern="$2"
-    sshpass -p "$reMarkable_Password" ssh "$reMarkable_Server" "
+    ssh "$reMarkable_Server" "
         find \"$search_path\" -type f -name '$search_pattern' -print | while read file; do
             echo \"\$(stat -c '%Y' \"\$file\") \$file\"
         done | sort -n | tail -1 | awk '{print \$2}'
@@ -77,7 +50,7 @@ find_Latest_File() {
 find_Latest_Directory() {
     local search_path="$1"
     local search_pattern="$2"
-    sshpass -p "$reMarkable_Password" ssh "$reMarkable_Server" "
+    ssh "$reMarkable_Server" "
         find \"$search_path\" -maxdepth 1 -type d -name '$search_pattern' ! -name '*.*' ! -name 'xochitl' -print | while read dir; do
             echo \"\$(stat -c '%Y' \"\$dir\") \$dir\"
         done | sort -n | tail -1 | awk '{print \$2}'
@@ -91,7 +64,7 @@ download_File() {
     
     local file_path="$1"
     echo "Stahuji soubor: $file_path"
-    sshpass -p "$reMarkable_Password" scp "$reMarkable_Server:\"$file_path\"" .
+    scp "$reMarkable_Server:\"$file_path\"" .
 }
 
 # Funkce pro zpracování nalezeného souboru
@@ -127,28 +100,19 @@ upgrade_WGET () {
         # Download and compare to hash
         mkdir -p "$(dirname "$wget_path")"
         if ! wget -cq "$wget_remote" --output-document "$wget_path"; then
-            echo "${COLOR_ERROR}Error: Could not fetch wget, make sure you have a stable Wi-Fi connection${NOCOLOR}"
+            echo "Error: Could not fetch wget, make sure you have a stable Wi-Fi connection"
             exit 1
         fi
     fi
 
     if ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
-        echo "${COLOR_ERROR}Error: Invalid checksum for the local wget binary${NOCOLOR}"
+        echo "Error: Invalid checksum for the local wget binary"
         exit 1
     fi
 
     chmod 755 "$wget_path"
     WGET="$wget_path"
-    
-    
 }
-
-
-#    __  __      _         __           _      _   _          
-#   |  \/  |__ _(_)_ _    / _|_  _ _ _ | |____| |_(_)___ _ _  
-#   | |\/| / _` | | ' \  |  _| || | ' \| / / _|  _| / _ \ ' \ 
-#   |_|  |_\__,_|_|_||_| |_|  \_,_|_||_|_\_\__|\__|_\___/_||_|
-#                                                                                   
 
 # Hlavní část skriptu
 if [ -z "$reMarkable_File_ID" ]; then
