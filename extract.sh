@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Cesta k souborům
-reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
-
 # Definuj proměnné
 reMarkable_File_ID="${1:-}"  # Pokud je první argument prázdný, použije prázdný řetězec
+
+# Cesta k souborům
+reMarkable_Path="/home/root/.local/share/remarkable/xochitl/"
 
 WGET="wget"
 
@@ -15,10 +15,14 @@ upgrade_WGET () {
     wget_remote=http://toltec-dev.org/thirdparty/bin/wget-v1.21.1-1
     wget_checksum=c258140f059d16d24503c62c1fdf747ca843fe4ba8fcd464a6e6bda8c3bbb6b5
 
+    # Tato část skriptu kontroluje, zda je soubor wget na specifikované cestě ($wget_path) a zda má správný kontrolní součet.
+    # Pokud kontrolní součet nesouhlasí, soubor se smaže.
     if [ -f "$wget_path" ] && ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
         rm "$wget_path"
     fi
 
+    # Tato část skriptu kontroluje, zda je soubor wget na specifikované cestě ($wget_path) a zda má správný kontrolní součet.
+    # Pokud kontrolní součet nesouhlasí, soubor se smaže.
     if ! [ -f "$wget_path" ]; then
         echo "Fetching secure wget..."
         # Download and compare to hash
@@ -29,6 +33,7 @@ upgrade_WGET () {
         fi
     fi
 
+    # Tento úsek skriptu kontroluje integritu staženého souboru wget pomocí jeho SHA-256 kontrolního součtu.
     if ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
         echo "${COLOR_ERROR}Error: Invalid checksum for the local wget binary${NOCOLOR}"
         exit 1
@@ -58,6 +63,9 @@ find_Latest_Directory() {
 
 # Funkce pro stažení souboru
 download_File() {
+
+    upgrade_WGET
+
     local file_path="$1"
     echo "Stahuji soubor: $file_path"
     cp "$file_path" .  # Změněno na cp pro kopírování z reMarkable na lokální systém
@@ -79,8 +87,6 @@ process_Latest_File() {
         echo "Ve složce '$latest_directory' nejsou žádné soubory."
     fi
 }
-
-upgrade_WGET
 
 # Hlavní část skriptu
 if [ -z "$reMarkable_File_ID" ]; then
