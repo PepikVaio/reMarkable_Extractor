@@ -21,8 +21,8 @@ else
     directory=$(find_Directory "$reMarkable_Path" "$reMarkable_File_ID")
     
     if [ -n "$directory" ]; then
-        # Extrakce názvu složky bez cesty
-        folder_name=$(basename "$directory")
+        # Extrakce názvu složky bez cesty a přidání "/"
+        folder_name=$(basename "$directory")/
         echo "$folder_name"
     else
         echo "Error: Složka podle prefixu '$reMarkable_File_ID' nebyla nalezena."
