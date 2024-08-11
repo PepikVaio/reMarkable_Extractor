@@ -107,7 +107,7 @@ process_Latest_File() {
         file_name=$(basename "$latest_file")
         echo "Info: Nejnověji upravený soubor: $file_name"
         # Volání funkce pro stažení souboru
-        download_File "$latest_file"
+        download_File "$latest_file" "$file_name"
     else
         echo "Error: Ve složce '$latest_directory' nejsou žádné soubory."
         exit 1
@@ -116,12 +116,14 @@ process_Latest_File() {
 
 # Funkce pro stažení souboru
 download_File() {
-
     upgrade_WGET
 
     local file_path="$1"
+    local file_name="$2"
+
     # Vrátí název souboru jako výstup pro další použití v Apple Shortcuts
-    echo "Variables: $file_path"
+    echo "Variables: $file_name"
+    # Kopírování souboru do aktuální složky
     cp "$file_path" .
 }
 
