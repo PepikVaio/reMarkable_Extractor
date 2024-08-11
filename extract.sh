@@ -83,8 +83,12 @@ process_Latest_File() {
 
         # Volání funkce pro stažení souboru
         download_File "$latest_file"
+
+        # Vrátí název souboru jako výstup
+        echo "$file_name"
     else
         echo "Ve složce '$latest_directory' nejsou žádné soubory."
+        return 1  # Indikace chyby
     fi
 }
 
