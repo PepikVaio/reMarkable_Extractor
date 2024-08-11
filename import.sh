@@ -55,3 +55,4 @@ copy() {
 }
 
 
+upgrade_wget
