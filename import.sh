@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ID souboru, například eaf3f838
+# ID souboru, například eaf3f838 (nepovinný)
 reMarkable_File_ID="${1:-}"
 
 # Cesta k souborům
@@ -21,7 +21,9 @@ else
     directory=$(find_Directory "$reMarkable_Path" "$reMarkable_File_ID")
     
     if [ -n "$directory" ]; then
-        echo "$directory"
+        # Extrakce názvu složky bez cesty
+        folder_name=$(basename "$directory")
+        echo "$folder_name"
     else
         echo "Error: Složka podle prefixu '$reMarkable_File_ID' nebyla nalezena."
         exit 1
