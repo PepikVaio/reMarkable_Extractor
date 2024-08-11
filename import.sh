@@ -75,7 +75,18 @@ else
         exit 1
     fi
 
+    # Zkontrolujte, zda cílový adresář existuje a je skutečně adresář
+    if [ ! -d "$matching_directory" ]; then
+        echo "Error: Cílový adresář '$matching_directory' neexistuje."
+        exit 1
+    fi
+
     # Kopírování souboru do nalezené složky
-    cp "$specified_file" "$matching_directory"
-    echo "Info: Soubor '$specified_file' byl úspěšně zkopírován do '$matching_directory'."
+    cp "$specified_file" "$matching_directory/"
+    if [ $? -eq 0 ]; then
+        echo "Info: Soubor '$specified_file' byl úspěšně zkopírován do '$matching_directory'."
+    else
+        echo "Error: Kopírování souboru '$specified_file' do '$matching_directory' selhalo."
+        exit 1
+    fi
 fi
