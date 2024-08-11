@@ -21,21 +21,21 @@ upgrade_WGET () {
         rm "$wget_path"
     fi
 
-    # Tato část skriptu kontroluje, zda je soubor wget na specifikované cestě ($wget_path) a zda má správný kontrolní součet.
-    # Pokud kontrolní součet nesouhlasí, soubor se smaže.
+    # Tato část skriptu kontroluje, zda je soubor wget na specifikované cestě ($wget_path).
+    # Pokud ne, soubor se stáhne.
     if ! [ -f "$wget_path" ]; then
-        echo "Fetching secure wget..."
-        # Download and compare to hash
+        echo "Načítání zabezpečeného wget"
+        # Stáhněte si a porovnejte s hash
         mkdir -p "$(dirname "$wget_path")"
         if ! wget -cq "$wget_remote" --output-document "$wget_path"; then
-            echo "${COLOR_ERROR}Error: Could not fetch wget, make sure you have a stable Wi-Fi connection${NOCOLOR}"
+            echo "Chyba: Nelze načíst wget, ujistěte se, že máte stabilní připojení Wi-Fi"
             exit 1
         fi
     fi
 
     # Tento úsek skriptu kontroluje integritu staženého souboru wget pomocí jeho SHA-256 kontrolního součtu.
     if ! sha256sum -c <(echo "$wget_checksum  $wget_path") > /dev/null 2>&1; then
-        echo "${COLOR_ERROR}Error: Invalid checksum for the local wget binary${NOCOLOR}"
+        echo "Chyba: Neplatný kontrolní součet pro místní binární soubor wget"
         exit 1
     fi
 
@@ -61,16 +61,6 @@ find_Latest_Directory() {
     done | sort -n | tail -1 | awk '{print $2}'
 }
 
-# Funkce pro stažení souboru
-download_File() {
-
-    upgrade_WGET
-
-    local file_path="$1"
-    echo "Stahuji soubor: $file_path"
-    cp "$file_path" .  # Změněno na cp pro kopírování z reMarkable na lokální systém
-}
-
 # Funkce pro zpracování nalezeného souboru
 process_Latest_File() {
     local latest_file="$1"
@@ -83,13 +73,21 @@ process_Latest_File() {
 
         # Volání funkce pro stažení souboru
         download_File "$latest_file"
-
-        # Vrátí název souboru jako výstup
-        echo "$file_name"
     else
         echo "Ve složce '$latest_directory' nejsou žádné soubory."
         return 1  # Indikace chyby
     fi
+}
+
+# Funkce pro stažení souboru
+download_File() {
+
+    upgrade_WGET
+
+    local file_path="$1"
+    # Vrátí název souboru jako výstup
+    echo "Stahuji soubor: $file_path"
+    cp "$file_path" .
 }
 
 # Hlavní část skriptu
