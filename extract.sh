@@ -105,9 +105,12 @@ process_Latest_File() {
     if [ -n "$latest_file" ]; then
         # Získání názvu souboru bez cesty
         file_name=$(basename "$latest_file")
+        # Získání názvu souboru bez koncovky
+        file_name_no_ext="${file_name%.*}"
         echo "Info: Nejnověji upravený soubor: $file_name"
-        # Volání funkce pro stažení souboru
-        download_File "$latest_file" "$file_name"
+        echo "Info: Nejnověji upravený soubor bez koncovky: $file_name_no_ext"
+        # Volání funkce pro stažení souboru (s parametry)
+        download_File "$latest_file" "$file_name_no_ext"
     else
         echo "Error: Ve složce '$latest_directory' nejsou žádné soubory."
         exit 1
@@ -122,7 +125,7 @@ download_File() {
     local file_name="$2"
 
     # Vrátí název souboru jako výstup pro další použití v Apple Shortcuts
-    echo "Variables: $file_name"
+    echo "Variables: $file_name_no_ext"
     # Kopírování souboru do aktuální složky
     cp "$file_path" .
 }
