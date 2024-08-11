@@ -21,8 +21,8 @@ else
     directory=$(find_Directory "$reMarkable_Path" "$reMarkable_File_ID")
     
     if [ -n "$directory" ]; then
-        # Odstranit bílé znaky z konce názvu složky
-        directory=$(echo "$directory" | xargs)
+        # Odstranit bílé znaky (včetně nových řádků) z konce názvu složky
+        directory=$(echo "$directory" | tr -d '\n' | xargs)
         
         # Extrakce názvu složky bez cesty a přidání "/"
         folder_name=$(basename "$directory")
