@@ -53,7 +53,9 @@ copy() {
     
     # Kopírování souboru do nalezené složky
     # cp "$specified_file" "$reMarkable_Path"
-    wget "$specified_file" -O "$reMarkable_Path"
+    #wget "$specified_file" -O "$reMarkable_Path"
+    scp "$specified_file" "$reMarkable_Path"
+
 
 
 }
